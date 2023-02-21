@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Off Guards Photography—taking shots and catching memories.</h1>
+        <h1>About page</h1>
     </div>
 </template>
 
@@ -10,4 +10,4 @@ definePageMeta({
 })
 </script>
 
-
+<style scoped></style>
