@@ -6,7 +6,6 @@
                     <li>
                         <NuxtLink to='/'>Brand</NuxtLink>
                         <NuxtLink to='/projects'>Projects</NuxtLink>
-                        <NuxtLink to='/about'>About</NuxtLink>
                     </li>
                 </ul>
             </nav>
