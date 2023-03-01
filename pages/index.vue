@@ -5,21 +5,23 @@
                 <div class="colGridChild1">
                     <h1 class='homeTopLeft'>Off Guards</h1>
                     <p class='homeTopLeft'>Capture your realest moments <br /> and hold on for life.</p>
-                    <img src="~/assets/imgs/stars-group.svg" alt="magical stars" class='border-0 pAbsolute'>
+                    <img src="~/assets/imgs/stars-group.svg" alt="magical stars" class='homeTopLeft border-0 pAbsolute'>
                     <div class="btnWrapper homeTopLeft">
                         <NuxtLink to='/' class="button">Book a photo shoot<span class='buttonArrow ps-3'>⟶</span>
                         </NuxtLink>
                         <div class="buttonBackBkg"></div>
                     </div>
                     <div class="colGridParent">
-                        <div class="colGridChild1"><img src="~/assets/imgs/ljd3.svg" class="fadeInTl" id="ljdImg3" alt="">
+                        <div class="colGridChild1"><img src="~/assets/imgs/ljd3.svg" class="fadeInTl" id="ljdImg3"
+                                alt="3rd off guard image of couple">
                         </div>
-                        <div class="colGridChild2"><img src="~/assets/imgs/ljd2.svg" class="fadeInTl" id="ljdImg2" alt="">
+                        <div class="colGridChild2"><img src="~/assets/imgs/ljd2.svg" class="fadeInTl" id="ljdImg2"
+                                alt="2nd off guard image of couple">
                         </div>
                     </div>
                 </div>
                 <div class="colGridChild2">
-                    <img src="~/assets/imgs/ljd1.svg" class="fadeInTr" id="ljdImg1" alt="off guard image of couple">
+                    <img src="~/assets/imgs/ljd1.svg" class="fadeInTr" id="ljdImg1" alt="1st off guard image of couple">
                 </div>
             </div>
         </div>
@@ -91,6 +93,36 @@ import { ref } from 'vue'
         position: absolute;
         top: -40px;
         left: 84%;
+        -webkit-animation: blink-2 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s infinite both;
+        animation: blink-2 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s infinite both;
+
+        @-webkit-keyframes blink-2 {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.2;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes blink-2 {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.2;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     }
 
     .colGridChild2 {

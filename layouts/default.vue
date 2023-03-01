@@ -101,7 +101,7 @@
     position: relative;
     background-color: $primary2;
     color: $darkText1;
-    font-weight: bold;
+    font-weight: 500;
     border: 1px solid $borderDark1;
     border-radius: 100px;
     z-index: 1;
