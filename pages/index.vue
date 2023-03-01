@@ -3,20 +3,23 @@
         <div class="container-md">
             <div class="colGridParent">
                 <div class="colGridChild1">
-                    <h1>Off Guards</h1>
-                    <p>Capture your realest moments and hold on to the memories. </p>
-                    <div class="btnWrapper">
+                    <h1 class='homeTopLeft'>Off Guards</h1>
+                    <p class='homeTopLeft'>Capture your realest moments <br /> and hold on for life.</p>
+                    <img src="~/assets/imgs/stars-group.svg" alt="magical stars" class='border-0 pAbsolute'>
+                    <div class="btnWrapper homeTopLeft">
                         <NuxtLink to='/' class="button">Book a photo shoot<span class='buttonArrow ps-3'>⟶</span>
                         </NuxtLink>
                         <div class="buttonBackBkg"></div>
                     </div>
                     <div class="colGridParent">
-                        <div class="colGridChild1"><img src="~/assets/imgs/ljd3.svg" alt=""></div>
-                        <div class="colGridChild2"><img src="~/assets/imgs/ljd2.svg" alt=""></div>
+                        <div class="colGridChild1"><img src="~/assets/imgs/ljd3.svg" class="fadeInTl" id="ljdImg3" alt="">
+                        </div>
+                        <div class="colGridChild2"><img src="~/assets/imgs/ljd2.svg" class="fadeInTl" id="ljdImg2" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="colGridChild2">
-                    <img src="~/assets/imgs/ljd1.svg" alt="">
+                    <img src="~/assets/imgs/ljd1.svg" class="fadeInTr" id="ljdImg1" alt="off guard image of couple">
                 </div>
             </div>
         </div>
@@ -26,9 +29,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-definePageMeta({
-    layout: 'default'
-})
 </script>
 
 <style lang='scss' scoped>
@@ -46,19 +46,162 @@ definePageMeta({
     }
 }
 
+.homeTopLeft {
+    -webkit-animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+    animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+
+    @-webkit-keyframes fade-in-bl {
+        0% {
+            -webkit-transform: translateX(-50px) translateY(50px);
+            transform: translateX(-50px) translateY(50px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-in-bl {
+        0% {
+            -webkit-transform: translateX(-50px) translateY(50px);
+            transform: translateX(-50px) translateY(50px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
 .colGridChild1 {
+    position: relative;
+
 
     p {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    img.pAbsolute {
+        position: absolute;
+        top: -40px;
+        left: 84%;
     }
 
     .colGridChild2 {
-        margin-top: -60px;
+        margin-top: -90px;
     }
 
 }
 
-// .colGridChild2 {}
+.colGridChild1,
+.colGridChild2 {
+
+    #ljdImg3 {
+        -webkit-animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+        animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+
+        @-webkit-keyframes fade-in-bl {
+            0% {
+                -webkit-transform: translateX(-50px) translateY(50px);
+                transform: translateX(-50px) translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-bl {
+            0% {
+                -webkit-transform: translateX(-50px) translateY(50px);
+                transform: translateX(-50px) translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    #ljdImg2 {
+        -webkit-animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+        animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+
+        @-webkit-keyframes fade-in-bl {
+            0% {
+                -webkit-transform: translateX(-50px) translateY(50px);
+                transform: translateX(-50px) translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-bl {
+            0% {
+                -webkit-transform: translateX(-50px) translateY(50px);
+                transform: translateX(-50px) translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+        }
+
+    }
+
+    #ljdImg1 {
+        -webkit-animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+        animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+
+        @-webkit-keyframes fade-in-bl {
+            0% {
+                -webkit-transform: translateX(-50px) translateY(50px);
+                transform: translateX(-50px) translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-bl {
+            0% {
+                -webkit-transform: translateX(-50px) translateY(50px);
+                transform: translateX(-50px) translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 992px) {
