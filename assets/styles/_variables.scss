@@ -5,25 +5,48 @@ $darkest: #000;
 $lightest: #fff;
 $medium: #c3bbbf;
 
+// primary shades - hex
+$primary1: #f99b90;
+$primary2: #f6705f;
+$primary3: #f44631;
+$primary4: #ffd4bb;
+
 // backgrounds - hex
 $lightBg: #fffdf1;
-$dark1Bg: #110f10;
-$dark2Bg: #2b2629;
-$dark3Bg: #463e42;
+$darkBg1: #110f10;
+$darkBg2: #2b2629;
+$darkBg3: #463e42;
 
-// bg states primary - hex
-$startStateBg1: #f99b90;
-$hoverStateBg1: #f6705f;
-// bg states secondary - hex
+// states bg - hex
+$startStateBg1: #ffd4bb;
 $startStateBg2: #f99b90;
-$hoverStateBg2: #f6705f;
+$hoverStateBg1: #f6705f;
 
 // text - hex
 $darkText1: #110f10;
 $darkText2: #2b2629;
 $darkText3: #463e42;
+$darkText4: rgba(70, 62, 66, 0.5);
+$lightText1: #fffdf1;
+
+// borders - hex
+$borderDark1: #110f10;
+$borderDark2: #2b2629;
+$borderDark3: #463e42;
+$borderDark4: rgba(70, 62, 66, 0.5);
 
 // accents - hex
+$accentDarkestBlue: #8fb1f1;
+$accentMedBlue: #bbd0f7;
+$accentLightBlue: #e8effc;
+
+$accentDarkestGreen: #97b8a5;
+$accentMedGreen: #b6cdc0;
+$accentLightGreen: #d5e2da;
+
+$accentDarkestYellow: #f3c309;
+$accentMedYellow: #f8d035;
+$accentLightYellow: #f9db67;
 
 /* 
 RGBA 
