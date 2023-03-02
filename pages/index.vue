@@ -93,36 +93,6 @@ import { ref } from 'vue'
         position: absolute;
         top: -40px;
         left: 84%;
-        -webkit-animation: blink-2 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s infinite both;
-        animation: blink-2 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s infinite both;
-
-        @-webkit-keyframes blink-2 {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.2;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes blink-2 {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.2;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
     }
 
     .colGridChild2 {
@@ -246,6 +216,16 @@ import { ref } from 'vue'
     }
 
     .colGridChild1 {
+        h1 {
+            font-size: 3.6rem;
+        }
+
+        img.pAbsolute {
+            position: absolute;
+            top: -40px;
+            left: 78%;
+        }
+
         .colGridChild2 {
             margin-top: 0px;
         }

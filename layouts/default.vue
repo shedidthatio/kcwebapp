@@ -197,7 +197,7 @@
 .barShort,
 .barLong {
     display: block;
-    height: 3px;
+    height: 2px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
