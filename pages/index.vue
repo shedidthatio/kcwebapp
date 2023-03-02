@@ -1,27 +1,29 @@
 <template>
-    <section class="section">
+    <section class="section" id='homeTopSection'>
+        <img src="~/assets/imgs/stars-group.svg" class="absImg" alt="">
         <div class="container-md">
             <div class="colGridParent">
-                <div class="colGridChild1">
-                    <h1 class='homeTopLeft'>Off Guards</h1>
-                    <p class='homeTopLeft'>Capture your realest moments <br /> and hold on for life.</p>
-                    <img src="~/assets/imgs/stars-group.svg" alt="magical stars" class='homeTopLeft border-0 pAbsolute'>
-                    <div class="btnWrapper homeTopLeft">
-                        <NuxtLink to='/' class="button">Book a photo shoot<span class='buttonArrow ps-3'>⟶</span>
-                        </NuxtLink>
-                        <div class="buttonBackBkg"></div>
+                <div class="colGridChildText">
+                    <div class="wrapWBg fadeInLeft">
+                        <Heading1 />
+                        <p class='my-4'>Capture your realest moments <br /> and hold on for life.</p>
+                        <div class="btnWrapper">
+                            <NuxtLink to='/' class="button">Book a photo shoot<span class='buttonArrow ps-3'>⟶</span>
+                            </NuxtLink>
+                            <div class="buttonBackBkg"></div>
+                        </div>
                     </div>
                     <div class="colGridParent">
-                        <div class="colGridChild1"><img src="~/assets/imgs/ljd3.svg" class="fadeInTl" id="ljdImg3"
-                                alt="3rd off guard image of couple">
+                        <div class="colGridChildImg"><img src="~/assets/imgs/ljd3.svg" alt="3rd off guard image of couple"
+                                class='borderDark1 fadeInLeft'>
                         </div>
-                        <div class="colGridChild2"><img src="~/assets/imgs/ljd2.svg" class="fadeInTl" id="ljdImg2"
-                                alt="2nd off guard image of couple">
+                        <div class="colGridChildImg" id='img2'><img src="~/assets/imgs/ljd2.svg"
+                                alt="2nd off guard image of couple" class='borderDark1 fadeInLeft'>
                         </div>
                     </div>
                 </div>
-                <div class="colGridChild2">
-                    <img src="~/assets/imgs/ljd1.svg" class="fadeInTr" id="ljdImg1" alt="1st off guard image of couple">
+                <div class="colGridChildImg">
+                    <img src="~/assets/imgs/ljd1.svg" alt="1st off guard image of couple" class='borderDark1 fadeInLeft'>
                 </div>
             </div>
         </div>
@@ -30,210 +32,146 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-
 </script>
 
 <style lang='scss' scoped>
-.colGridParent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-
-    img {
-        border: 1px solid $borderDark1;
-        border-radius: 40px;
-        margin-bottom: 20px;
-    }
-}
-
-.homeTopLeft {
-    -webkit-animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
-    animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
-
-    @-webkit-keyframes fade-in-bl {
-        0% {
-            -webkit-transform: translateX(-50px) translateY(50px);
-            transform: translateX(-50px) translateY(50px);
-            opacity: 0;
-        }
-
-        100% {
-            -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-            opacity: 1;
-        }
-    }
-
-    @keyframes fade-in-bl {
-        0% {
-            -webkit-transform: translateX(-50px) translateY(50px);
-            transform: translateX(-50px) translateY(50px);
-            opacity: 0;
-        }
-
-        100% {
-            -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
-            opacity: 1;
-        }
-    }
-}
-
-.colGridChild1 {
+#homeTopSection {
     position: relative;
 
-
-    p {
-        font-size: 20px;
-    }
-
-    img.pAbsolute {
+    .absImg {
         position: absolute;
-        top: -40px;
-        left: 84%;
+        z-index: 50;
+        top: 8%;
+        right: 5%;
+        transform: translate(50%, -50%);
+        max-width: 80px;
     }
 
-    .colGridChild2 {
-        margin-top: -50px;
-    }
-
-}
-
-.colGridChild1,
-.colGridChild2 {
-
-    #ljdImg3 {
-        -webkit-animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
-        animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
-
-        @-webkit-keyframes fade-in-bl {
-            0% {
-                -webkit-transform: translateX(-50px) translateY(50px);
-                transform: translateX(-50px) translateY(50px);
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translateX(0) translateY(0);
-                transform: translateX(0) translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fade-in-bl {
-            0% {
-                -webkit-transform: translateX(-50px) translateY(50px);
-                transform: translateX(-50px) translateY(50px);
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translateX(0) translateY(0);
-                transform: translateX(0) translateY(0);
-                opacity: 1;
-            }
-        }
-    }
-
-    #ljdImg2 {
-        -webkit-animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-        animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
-
-        @-webkit-keyframes fade-in-bl {
-            0% {
-                -webkit-transform: translateX(-50px) translateY(50px);
-                transform: translateX(-50px) translateY(50px);
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translateX(0) translateY(0);
-                transform: translateX(0) translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fade-in-bl {
-            0% {
-                -webkit-transform: translateX(-50px) translateY(50px);
-                transform: translateX(-50px) translateY(50px);
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translateX(0) translateY(0);
-                transform: translateX(0) translateY(0);
-                opacity: 1;
-            }
-        }
-
-    }
-
-    #ljdImg1 {
-        -webkit-animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-        animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-
-        @-webkit-keyframes fade-in-bl {
-            0% {
-                -webkit-transform: translateX(-50px) translateY(50px);
-                transform: translateX(-50px) translateY(50px);
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translateX(0) translateY(0);
-                transform: translateX(0) translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fade-in-bl {
-            0% {
-                -webkit-transform: translateX(-50px) translateY(50px);
-                transform: translateX(-50px) translateY(50px);
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: translateX(0) translateY(0);
-                transform: translateX(0) translateY(0);
-                opacity: 1;
-            }
-        }
-    }
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 992px) {
     .colGridParent {
+        position: relative;
+        z-index: 1;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
 
-    .colGridChild1 {
-        h1 {
-            font-size: 3.6rem;
+        p {
+            font-size: 1.2rem;
         }
 
-        img.pAbsolute {
+        .borderDark1 {
+            border: 1px solid $borderDark1;
+            border-radius: 40px;
+            margin-bottom: 20px;
+        }
+
+        .fadeInLeft {
+            -webkit-animation: fade-in-bl 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bl 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+            @-webkit-keyframes fade-in-bl {
+                0% {
+                    -webkit-transform: translateX(-200px) translateY(50px);
+                    transform: translateX(-200px) translateY(50px);
+                    opacity: 0;
+                }
+
+                100% {
+                    -webkit-transform: translateX(0) translateY(0);
+                    transform: translateX(0) translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fade-in-bl {
+                0% {
+                    -webkit-transform: translateX(-200px) translateY(50px);
+                    transform: translateX(-200px) translateY(50px);
+                    opacity: 0;
+                }
+
+                100% {
+                    -webkit-transform: translateX(0) translateY(0);
+                    transform: translateX(0) translateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+
+        #img2 {
+            margin-top: -120px;
+        }
+    }
+
+    /* MEDIA QUERIES */
+    @media (max-width: 992px) {
+        .absImg {
             position: absolute;
-            top: 10px;
-            left: 76%;
+            z-index: 100;
+            top: 5%;
+            right: 16%;
+            max-width: 100px;
         }
 
-        .colGridChild2 {
-            margin-top: 0px;
+        .colGridParent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            #img2 {
+                margin-top: 0px;
+            }
         }
     }
 
-    // .colGridChild2 {
+    @media (max-width: 798px) {
+        .absImg {
+            position: absolute;
+            z-index: 100;
+            top: 4%;
+            right: 10%;
+            max-width: 100px;
+        }
 
-    // }
+        .colGridParent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            #img2 {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    @media (max-width: 412px) {
+        .absImg {
+            position: absolute;
+            z-index: 100;
+            top: 12%;
+            right: 15%;
+            max-width: 60px;
+        }
+
+        .colGridParent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            #img2 {
+                margin-top: 0px;
+            }
+        }
+    }
+
+
 }
 </style>
 
