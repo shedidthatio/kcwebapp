@@ -51,7 +51,10 @@
                                 </NuxtLink>
                             </li>
                             <li class="nav-item">
-                                <NuxtLink to='/' id='navCTA' class='nav-link px-4'>Get Started
+                                <NuxtLink to='/' id='navCTA'
+                                    class='nav-link d-flex justify-content-center align-items-center mt-1 px-3'>Book
+                                    It<span><img src="~/assets/imgs/small-star.svg" alt="small decorative star"
+                                            class='ms-2'></span>
                                     <div class="nav-cta-back"></div>
                                 </NuxtLink>
                             </li>

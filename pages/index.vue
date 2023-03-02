@@ -96,7 +96,7 @@ import { ref } from 'vue'
     }
 
     .colGridChild2 {
-        margin-top: -90px;
+        margin-top: -50px;
     }
 
 }
@@ -222,8 +222,8 @@ import { ref } from 'vue'
 
         img.pAbsolute {
             position: absolute;
-            top: -40px;
-            left: 78%;
+            top: 10px;
+            left: 76%;
         }
 
         .colGridChild2 {
